@@ -6,7 +6,7 @@ function fzf_git_worktree_change_dir() {
   local query
   local sess_arr
   local retval
-  worktrees=$(git worktree list | fzf --select-1 --exit-0 --print-query --reverse)
+  worktrees=$(git worktree list | fzf --exit-0 --print-query --reverse)
   retval=$?
 
   IFS=$'\n' read -rd '' -a sess_arr <<<"$worktrees"
