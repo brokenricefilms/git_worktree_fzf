@@ -47,7 +47,7 @@ excludesfile = ~/.gitignore
 - you can make the alias of that like me.
 
 ```bash
-alias w="hzf_git_worktree_change_dir"
+alias w="fzf_git_worktree_change_dir"
 alias ww="fzf_git_worktree_remove"
 ```
 
