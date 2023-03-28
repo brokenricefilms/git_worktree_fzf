@@ -42,9 +42,8 @@ excludesfile = ~/.gitignore
 **Function**
 
 - The script have 2 functions:
-1. fzf_git_worktree_change_dir
-2. fzf_git_worktree_remove
-
+    1. fzf_git_worktree_change_dir
+    2. fzf_git_worktree_remove
 - you can make the alias of that like me.
 
 ```bash
