@@ -15,6 +15,19 @@ OR
 
 - Just add this [git_worktree_fzf.bash](./git_worktree_fzf.bash) on your bash config
 
+## Requirements
+
+- you have already git worktree in you repo [#bug](https://github.com/thuanowa/git_worktree_fzf/issues/1)
+
+> quick fix: create git worktree
+
+E.g
+```bash
+cd $(git worktree list | head --lines 1 | awk '{print $1}')
+mkdir .worktrees/
+git worktree add .worktrees/tmp/
+```
+
 ## How to use?
 
 worktree will be stored at `.worktrees`:
