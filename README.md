@@ -6,10 +6,11 @@
 ## Install
 
 ```bash
- curl --remote-name https://raw.githubusercontent.com/thuanowa/git_worktree_fzf/master/git_worktree_fzf.bash > ~/.local/share/git_worktree_fzf.bash
+curl --remote-name https://raw.githubusercontent.com/thuanowa/git_worktree_fzf/master/git_worktree_fzf.bash > ~/.local/share/git_worktree_fzf.bash
 
- echo "source ~/.local/share/git_worktree_fzf.bash" >> ~/.bashrc
- ```
+echo "source ~/.local/share/git_worktree_fzf.bash" >> ~/.bashrc
+source ~/.bashrc 
+```
 
 OR
 
