@@ -2,6 +2,7 @@
 
 - I'm test it worked on bash maybe zsh will work.
 - Fish and other shell can be support later if i not lazy, pull request are welcome🫰
+- Video: <https://youtu.be/B39zBcK6x5w>
 
 ## Install
 
