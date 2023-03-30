@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
+is_in_git_repo() {
+  git rev-parse HEAD > /dev/null 2>&1
+}
+
 function fzf_git_worktree_change_dir() {
+  is_in_git_repo || return
+
   local worktrees
   local worktree
   local query
@@ -34,6 +40,8 @@ function fzf_git_worktree_change_dir() {
 }
 
 function fzf_git_worktree_remove() {
+  is_in_git_repo || return
+
   WORKTREE=$(git worktree list | fzf | awk '{print $1}')
   DEFAULT_GIT_FOLDER=$(git worktree list | head --lines 1 | awk '{print $1}')
 
